@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
     background-color: #f4f4f4;
   }
   
@@ -43,6 +43,14 @@ body {
   .header .logo {
     display: block;
     float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  .header .register {
+    display: none;
+    float: right;
     font-size: 2em;
     padding: 10px 20px;
     text-decoration: none;
@@ -121,9 +129,9 @@ body {
     top: 0;
   }
   
-  /* 48em = 768px */
-  
-  @media (min-width: 48em) {
+
+/* If the screen goes above 768 pixels then add a full menu bar */  
+  @media (min-width: 768px) {
     .header li {
       float: left;
     }
@@ -132,11 +140,22 @@ body {
     }
     .header .menu {
       clear: none;
-      float: right;
       max-height: none;
     }
     .header .menu-icon {
       display: none;
     }
+
+  }
+
+  /* If the screen goes above 908 pixels then add a register button to the top right */  
+  @media (min-width: 908px){
+    .header .register {
+        display: block;
+        float: right;
+        font-size: 1.5em;
+        padding: 14px 25px;
+        text-decoration: none;
+      }
   }
   
