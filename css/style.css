@@ -43,17 +43,20 @@ body {
   .header .logo {
     display: block;
     float: left;
+    font-weight: bold;
     font-size: 2em;
     padding: 10px 20px;
     text-decoration: none;
   }
 
-  .header .register {
+  .header .register{
     display: none;
     float: right;
-    font-size: 2em;
-    padding: 10px 20px;
+    font-weight: bold;
+    padding: 5px 15px;
     text-decoration: none;
+    margin: 17px 20px;
+    border-radius: 8px;
   }
   
   /* menu */
@@ -128,6 +131,15 @@ body {
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
+
+  button{
+    background-color: #056571;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
   
 
 /* If the screen goes above 768 pixels then add a full menu bar */  
@@ -153,8 +165,7 @@ body {
     .header .register {
         display: block;
         float: right;
-        font-size: 1.5em;
-        padding: 14px 25px;
+        font-size: 1em;
         text-decoration: none;
       }
   }
