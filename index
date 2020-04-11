@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>CDU Code Fair 2020</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul id="nav">
+                <li>Home</li>
+                <li>Registration</li>
+                <li>About</li>
+              </ul>
+		</nav>
+	</header>
+	<main id="body">
+	</main>
+	<footer id="footer">
+	</footer>
+</body>
+</html>
