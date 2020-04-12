@@ -141,30 +141,78 @@ body {
     display: inline-block;
   }
 
+  button.hover{
+    background-color: #033940;
+  }
+
+  h1{
+      font-size: 28px;
+      margin-bottom: 0;
+  }
+
+  p{
+      font-size: 1rem;
+  }
+
   hr.purpleLine {
     margin-top: 0;
     box-sizing: border-box;
     border: 5px solid #211545;
-    vertical-align: bottom;
   }
 
   .headerLogo{
       max-width: 100%;
       box-sizing: border-box;
       vertical-align: bottom;
-      height: auto;
   }
 
-  #descriptionSection{
-    min-height:200px;
-    display: flex;
+.grid-container {
+    top: 62px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: .1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 0px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .descriptionSection{
+      height: 400px;
+  }
+
+  .grid-item.grid-item4{
+      align-self: end;
+  }
+
+  .grid-item.grid-item5{
+    align-self: end;
 }
+
+  .grid-item.grid-item3{
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 2;
+      grid-row-end: span 2;
+      align-self: end;
+  }
+  
+  .bodyParagraphWidth{
+      width: 100%;
+  }
 
 .descriptionLogo{
-    align-self: flex-end;
+    display: none;
 }
 
-/* If the screen goes above 768 pixels then add a full menu bar */  
+.headerLogoSmall{
+    display: block;
+    width: 100%;
+    height: 115px;
+}
+
+/* If the screen goes above 768 pixels then add a full menu bar and other images, text */  
   @media (min-width: 768px) {
     .header li {
       float: left;
@@ -180,13 +228,30 @@ body {
       display: none;
     }
 
-    #descriptionSection{
-        height:400px;
-        display: flex;
+    .descriptionSection{
+        height: 400px;
     }
 
     .descriptionLogo{
-        align-self: flex-end;
+        display: block;
+    }
+
+    .grid-container {
+        grid-template-columns: .75fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 15px;
+      }
+
+    .headerLogoSmall{
+        display: none;
+    }
+
+    h1{
+        font-size: 34px;
+    }
+
+    .bodyParagraphWidth{
+        width: 75%;
     }
 
   }
@@ -199,5 +264,16 @@ body {
         font-size: 1em;
         text-decoration: none;
       }
+
+      .bodyParagraphWidth{
+        width: 50%;
+    }
+
+    .grid-container {
+        text-align: left;
+        align-items: center;
+        justify-items: normal;
+      }
+
   }
   

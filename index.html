@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CDU Code Fair 2020</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -10,7 +11,7 @@
 		<nav>
 			
 			<a href="" class="logo">code fair</a>
-			<button class="register">Register</button>
+			<button type="button" class="register">Register</button>
 			<input class="menu-btn" type="checkbox" id="menu-btn" />
 			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 			<ul class="menu">
@@ -22,17 +23,36 @@
 		</nav>
 	</header>
 	<main id="body">
-		<section id="descriptionSection">
-				<div class="descriptionLogo">
-					<picture>
-						<source media="(min-width: 768px)" srcset="./images/CDULogoBigDifferent_340.png">
-						<source media="(min-width: 400px)" srcset="./images/CDULogoBigDifferent_170.png">
-						<!-- Fall back image in case picture not supported-->
-						<img class="headerLogo" src="./images/CDULogoBigDifferent_340.png">
-					</picture>
+		<section class="descriptionSection">
+			<div class="grid-container">
+				<div class="grid-item"></div>
+				<div class="grid-item"></div>
+				<div class="grid-item grid-item3">
+					<div class="descriptionLogo">
+						<picture>
+							<source media="(min-width: 768px)" srcset="./images/CDULogoBigDifferent_340.png">
+							<source media="(min-width: 400px)" srcset="./images/CDULogoBigDifferent_170.png">
+							<!-- Fall back image in case picture not supported-->
+							<img class="headerLogo" src="./images/CDULogoBigDifferent_340.png">
+						</picture>
+					</div>
 				</div>
+				<div class="grid-item grid-item4">
+					<section class="bodyParagraphWidth">
+						<h1>CDU Code Fair 2020 is ready for registrations</h1>
+						<p>Registrations are now open for the 2020 CDU Code Fair. The code fair is a place for students to share their IT skills, connect with industry and for students to showcase their creative digital problem solving skills.</p>
+					</section>
+				</div>
+				<div class="grid-item grid-item5">
+					<!-- Only show this logo on the samll screen for phone -->
+					<img class="headerLogoSmall" src="./images/CDU_Logo_Text.jpg">
+				</div>
+				<div class="grid-item grid-item6">
+					
+				</div>
+			</div>
+			<hr class="purpleLine">
 		</section>
-		<hr class="purpleLine">
 	</main>
 	<footer id="footer">
 	</footer>
