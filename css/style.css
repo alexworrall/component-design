@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
-    background-color: #f4f4f4;
+    background-color: white;
   }
   
   a {
@@ -140,7 +140,29 @@ body {
     text-decoration: none;
     display: inline-block;
   }
-  
+
+  hr.purpleLine {
+    margin-top: 0;
+    box-sizing: border-box;
+    border: 5px solid #211545;
+    vertical-align: bottom;
+  }
+
+  .headerLogo{
+      max-width: 100%;
+      box-sizing: border-box;
+      vertical-align: bottom;
+      height: auto;
+  }
+
+  #descriptionSection{
+    min-height:200px;
+    display: flex;
+}
+
+.descriptionLogo{
+    align-self: flex-end;
+}
 
 /* If the screen goes above 768 pixels then add a full menu bar */  
   @media (min-width: 768px) {
@@ -156,6 +178,15 @@ body {
     }
     .header .menu-icon {
       display: none;
+    }
+
+    #descriptionSection{
+        height:400px;
+        display: flex;
+    }
+
+    .descriptionLogo{
+        align-self: flex-end;
     }
 
   }
