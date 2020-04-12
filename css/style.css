@@ -52,11 +52,8 @@ body {
   .header .register{
     display: none;
     float: right;
-    font-weight: bold;
-    padding: 5px 15px;
     text-decoration: none;
     margin: 17px 20px;
-    border-radius: 8px;
   }
   
   /* menu */
@@ -139,9 +136,18 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 5px 15px;
+    font-size: 1em;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
   }
-
-  button.hover{
+  
+  button:hover{
     background-color: #033940;
   }
 
@@ -252,6 +258,10 @@ body {
 
     .bodyParagraphWidth{
         width: 75%;
+    }
+
+    .grid-item.grid-item5{
+        align-self: auto;
     }
 
   }
