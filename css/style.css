@@ -236,7 +236,7 @@ body {
     color: rgba(0,0,0,.87);
     margin: 20px;
     min-width: 290px;
-    width: 400px;
+    width: 350px;
     height: 450px;
     overflow: hidden;
     position: relative;
@@ -492,6 +492,11 @@ body {
         width: 100%;
     }
 
+    .cardImage{
+      width: 100%;
+      object-fit: none;
+    }
+
 /* If the screen goes above 768 pixels then add a full menu bar and other images, text */  
   @media (min-width: 768px) {
     .header li {
@@ -547,6 +552,10 @@ body {
     .bigRegisterButton{
         padding: 15px 55px;
       }
+
+    .card{
+      width: 400px;
+    }
 
   }
 
