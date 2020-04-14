@@ -238,7 +238,7 @@ body {
     margin: 20px;
     min-width: 300px;
     width: 300px;
-    height: 400px;
+    height: 420px;
     overflow: hidden;
     position: relative;
     float: left;
@@ -485,11 +485,14 @@ body {
 
     .eventInfoContainer{
         background-color: #007a87;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
         height: 100px;
         color: white;
-        text-align: center;
         margin: 0 auto;
-        display: inline-block;
         width: 100%;
     }
 
@@ -520,6 +523,12 @@ body {
       box-sizing: border-box;
       background-color: #211545;
       color: white;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      padding: 15px;
     }
 
     .footerCopyright{
