@@ -237,7 +237,7 @@ body {
     color: rgba(0,0,0,.87);
     margin: 20px;
     min-width: 300px;
-    width: 330px;
+    width: 350px;
     height: 400px;
     overflow: hidden;
     position: relative;
@@ -565,7 +565,7 @@ body {
   padding-right: 20px;
 }
 
-.sponsorsCard {
+.sponsorsCard, .sponsorsCardPlatinum{
   position: relative;
   height: 100%;
   margin: 0 auto;
@@ -578,6 +578,12 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  max-width: 350px;
+}
+
+.sponsorsCardPlatinum{
+  border-radius: 0px;
+  outline: #e5e4e2 solid 14px;
 }
 
 .sponsors-card-body {
@@ -587,21 +593,52 @@ body {
   flex: 1 1 auto;
 }
 
-.sponsors-card-label {
+.sponsors-card-label-bronze {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
   font-size: 13px;
   color: #fff;
-  background-color: #231f20;
+  background-color: #cd7f32;
+  padding: 7px 15px;
+}
+
+.sponsors-card-label-platinum {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 13px;
+  color: black;
+  background-color: #e5e4e2;
+  padding: 7px 15px;
+}
+
+.sponsors-card-label-gold {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 13px;
+  color: black;
+  background-color: gold;
+  padding: 7px 15px;
+}
+
+.sponsors-card-label-silver {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 13px;
+  color: black;
+  background-color: silver;
   padding: 7px 15px;
 }
 
 .sponsors-card-photo {
-background-position: 50% 50%;
-background-size: cover;
-background-repeat: no-repeat;
-height: 100px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  object-fit: cover;
 }
 
 .sponsorsCard p {
