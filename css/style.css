@@ -164,6 +164,7 @@ body {
     margin-top: 0;
     box-sizing: border-box;
     border: 5px solid #211545;
+    margin-bottom: 0;
   }
 
   .headerLogo{
@@ -514,7 +515,20 @@ body {
       height: 100%;
     }
 
+    .footer{
+      height: 75px;
+      box-sizing: border-box;
+      background-color: #211545;
+      color: white;
+    }
 
+    .footerCopyright{
+      vertical-align: middle;
+    }
+
+    .footerSocialIcons{
+      float:right;
+    }
 
 /* If the screen goes above 768 pixels then add a full menu bar and other images, text */  
   @media (min-width: 768px) {
