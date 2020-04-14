@@ -539,6 +539,93 @@ body {
       float:right;
     }
 
+    .sponsorsSection {
+      padding: 50px 0;
+    }
+    
+    .flex-row-stretch {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+    
+    .flex-col {
+        margin-bottom: 30px;
+        padding-left:15px;
+        padding-right: 15px;
+    }
+
+    /* ======Sponsors Cards======= 
+    Information for this method of doing cards sourced from: https://codepen.io/cmoen89/details/YzKNNJX
+    I wanted to try different methods of implementing cards.
+    */
+
+.sponsorsContainer{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sponsorsCard {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: left;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px -2px rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 4px 15px -2px rgba(0, 0, 0, .2);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.sponsors-card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.sponsors-card-label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+  background-color: #231f20;
+  padding: 7px 15px;
+}
+
+.sponsors-card-photo {
+background-position: 50% 50%;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100px;
+}
+
+.sponsorsCard p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.sponsorsCard h4 {
+  text-align: left !important;
+  margin: 0 0 13px;
+}
+
+.sponsorsCard a {
+  align-self: end;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .flex-col {
+      width: 100%;
+      margin-bottom: 15px;
+  }
+}
+
 /* If the screen goes above 768 pixels then add a full menu bar and other images, text */  
   @media (min-width: 768px) {
     .header li {
