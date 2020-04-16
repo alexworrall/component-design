@@ -1,5 +1,9 @@
 /* Hamburger navigation menu code used from: https://codepen.io/mutedblues/pen/MmPNPG */
 
+html{
+  color: #404040;
+}
+
 body {
     margin: 0;
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
@@ -623,7 +627,7 @@ body {
   font-weight: 600;
   font-size: 13px;
   color: black;
-  background-color: gold;
+  background-color: #ffd700;
   padding: 7px 15px;
 }
 
@@ -633,7 +637,7 @@ body {
   font-weight: 600;
   font-size: 13px;
   color: black;
-  background-color: silver;
+  background-color: #c0c0c0;
   padding: 7px 15px;
 }
 

@@ -1,4 +1,7 @@
 /* Hamburger navigation menu code used from: https://codepen.io/mutedblues/pen/MmPNPG */
+html{
+  color: #404040;
+}
 
 body {
     margin: 0;
